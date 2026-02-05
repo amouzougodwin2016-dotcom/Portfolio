@@ -10,64 +10,8 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('scrolled');
         nav.style.background = 'transparent';
         nav.style.backdropFilter = 'none';
+        nav.style.padding = '1.5rem 0';
     }
-});
-
-// Mobile Menu Toggle
-const menuToggle = document.createElement('div');
-menuToggle.className = 'menu-toggle';
-menuToggle.innerHTML = '<ion-icon name="menu-outline"></ion-icon>';
-
-const navContainer = document.querySelector('nav .container');
-if (navContainer) {
-    navContainer.appendChild(menuToggle);
-}
-
-// Create Mobile Menu Drawer if it doesn't exist
-let mobileMenu = document.querySelector('.mobile-menu');
-if (!mobileMenu) {
-    mobileMenu = document.createElement('div');
-    mobileMenu.className = 'mobile-menu';
-
-    const navLinks = document.querySelector('.nav-links').cloneNode(true);
-    navLinks.className = 'nav-links-mobile';
-
-    mobileMenu.appendChild(navLinks);
-    document.body.appendChild(mobileMenu);
-}
-
-// Create Overlay
-let overlay = document.querySelector('.menu-overlay');
-if (!overlay) {
-    overlay = document.createElement('div');
-    overlay.className = 'menu-overlay';
-    document.body.appendChild(overlay);
-}
-
-const toggleMenu = () => {
-    mobileMenu.classList.toggle('active');
-    overlay.classList.toggle('active');
-
-    // Toggle icon
-    const icon = menuToggle.querySelector('ion-icon');
-    if (mobileMenu.classList.contains('active')) {
-        icon.setAttribute('name', 'close-outline');
-    } else {
-        icon.setAttribute('name', 'menu-outline');
-    }
-};
-
-menuToggle.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
-
-// Close menu when clicking a link
-const mobileLinks = mobileMenu.querySelectorAll('a');
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        overlay.classList.remove('active');
-        menuToggle.querySelector('ion-icon').setAttribute('name', 'menu-outline');
-    });
 });
 
 // Reveal Animations on Scroll
