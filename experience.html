@@ -107,16 +107,29 @@
         }
 
         @media (max-width: 768px) {
+            .timeline {
+                padding: 1rem;
+            }
+
             .timeline::before {
                 left: 20px;
             }
 
             .timeline-item {
-                padding-left: 60px;
+                padding-left: 50px;
+                margin-bottom: 3rem;
             }
 
             .timeline-dot {
                 left: 11px;
+            }
+
+            .timeline-content {
+                padding: 1.5rem;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -133,7 +146,12 @@
                 <a href="projects.html">Projets</a>
                 <a href="index.html#contact">Contact</a>
             </div>
-            <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-nav-cta">Me Contacter</a>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-nav-cta">Me Contacter</a>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
         </div>
     </nav>
 
