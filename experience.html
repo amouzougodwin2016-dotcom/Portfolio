@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours | Amouzou Godwin - Assistant Marketing</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-primary);
+            opacity: 0.3;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            padding-left: 100px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 41px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--bg-dark);
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+        }
+
+        .timeline-content h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .company {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-content li {
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .timeline-content li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 60px;
+            }
+
+            .timeline-dot {
+                left: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="#" class="active">Mon parcours</a>
+                <a href="projects.html">Projets</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-nav-cta">Me Contacter</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero" style="padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="subtitle">Curriculum Vitae</span>
+                <h1>Mon Expérience & <span class="text-gradient">Formation</span></h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 2rem auto;">
+                    Un aperçu détaillé de mon cheminement académique et de mes premières immersions professionnelles,
+                    guidé par l'excellence et l'apprentissage continu.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="dark-section" style="background: var(--bg-dark);">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <h2 style="color: white;">Expériences Professionnelles</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Exp 1 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juillet 2024 - Septembre 2024</div>
+                    <div class="timeline-content">
+                        <h3>Stagiaire chargé de services aux sociétaires</h3>
+                        <span class="company">Fédération des Unités Coopératives d'Epargne et de Crédit | Lomé,
+                            Togo</span>
+                        <ul>
+                            <li>Prospection de nouveaux clients</li>
+                            <li>Accueil et assistance des membres</li>
+                            <li>Encourager à la consommation du crédit</li>
+                            <li>Réception et traitement des réclamations des membres</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juin 2023 - Novembre 2023</div>
+                    <div class="timeline-content">
+                        <h3>Intérimaire - Agent de production agroalimentaire</h3>
+                        <span class="company">ELIVIA | Angers, France</span>
+                        <ul>
+                            <li>Gestion des flux et suivi des stocks</li>
+                            <li>Veille au respect des normes d'hygiène, sécurité alimentaire et procédures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Octobre 2022 - Janvier 2023</div>
+                    <div class="timeline-content">
+                        <h3>Intérimaire - Agent logistique</h3>
+                        <span class="company">VIAPOSTE | Angers, France</span>
+                        <ul>
+                            <li>Utilisation d'outils informatiques pour suivi des stocks</li>
+                            <li>Organisation et autonomie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section class="details-section" style="background: #f8fafc; padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <h2 style="color: var(--bg-dark);">Diplômes & Formation</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Edu 1 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - 2027</div>
+                    <div class="timeline-content" style="background: white;">
+                        <h3 style="color: var(--bg-dark);">1re année Master Marketing, vente (Marketing Responsable)
+                        </h3>
+                        <span class="company">Institut d'Administration des Entreprises (IAE) | Nancy, France</span>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1rem;">
+                            <strong>Matières :</strong> Analyse du marché et comportement du consommateur, traitement de
+                            données, Marketing stratégique...
+                        </p>
+                        <p style="font-size: 0.9rem; color: #64748B;">
+                            <strong>Projets :</strong> Projet vidéographique ("Festival du Film Etudiant"), Étude de
+                            marché sur l'Opéra National de Lorraine.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Edu 2 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2025</div>
+                    <div class="timeline-content" style="background: white;">
+                        <h3 style="color: var(--bg-dark);">Licence d'Economie-Gestion spécialité Marketing (Mention)
+                        </h3>
+                        <span class="company">Université d'Angers | Angers, France</span>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1rem;">
+                            <strong>Matières :</strong> Marketing Opérationnel, E-commerce et phygital, Management de la
+                            force de vente...
+                        </p>
+                        <p style="font-size: 0.9rem; color: #64748B;">
+                            <strong>Projets :</strong> Conception de maquettes du site Décathlon avec Figma (démarche
+                            durable).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Edu 3 -->
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content" style="background: white;">
+                        <h3 style="color: var(--bg-dark);">Baccalauréat Série Générale (Mention Bien)</h3>
+                        <span class="company">Lomé, Togo</span>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-top: 0.5rem;">
+                            <strong>Spécialisations :</strong> Mathématiques, Sciences Économiques et Sociales et
+                            Histoire-Géographie, Géopolitique et Science Politique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-dark); color: var(--text-muted); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <div style="margin-bottom: 2rem;">
+                <a href="https://www.linkedin.com/in/memingnon-godwin-amouzou-0b034a259" target="_blank"
+                    style="color: var(--primary); font-size: 2rem; transition: var(--transition);">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+            <p style="font-size: 0.8rem;">&copy; 2026 Amouzou Godwin. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

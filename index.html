@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Marketing Responsable</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- CSS Orbs for Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <a href="#home" class="active">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="experience.html">Mon parcours</a>
+                <a href="projects.html">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-nav-cta">Me Contacter</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero container">
+        <div class="grid-2">
+            <div class="hero-content" data-reveal>
+                <h1 data-reveal>
+                    <span
+                        style="font-size: 1.2rem; display: block; font-weight: 400; color: var(--text-muted); margin-bottom: 0.5rem;">Bonjour,
+                        je suis</span>
+                    <span style="display: block; font-size: 3.5rem; color: white; font-weight: 800;">Godwin
+                        Amouzou</span>
+                    <span
+                        style="font-size: 1.5rem; color: var(--text-muted); font-weight: 400; display: block; min-height: 1.8em;">
+                        <span id="typewriter" class="text-gradient"></span>
+                    </span>
+                </h1>
+                <p style="color: #94A3B8; margin-bottom: 2rem; font-size: 1.1rem;" data-reveal>
+                    Étudiant en Marketing Responsable, passionné par la création de stratégies à impact positif.
+                    Je vous aide à allier performance économique et responsabilité éthique.
+                </p>
+                <div style="display: flex; gap: 1rem;" data-reveal>
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                    <a href="projects.html" class="btn btn-outline">Voir Projets</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-reveal>
+                <img src="./assets/img_portrait1.png" alt="Mon Portrait" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services / Competences Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <span class="subtitle">Ce que je propose</span>
+            <div class="grid-2" style="margin-bottom: 3rem; align-items: end;">
+                <h2 style="color: var(--bg-dark);">Ce que je peux principalement faire pour/avec vous</h2>
+                <p style="color: #64748B;">
+                    Une synergie de compétences digitales et commerciales pour propulser votre croissance
+                    et optimiser votre présence de marque.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Competence 1 -->
+                <div class="service-card" data-reveal>
+                    <div class="icon-box">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                    </div>
+                    <h3 class="card-title" style="font-size: 1.1rem;">Prospection & CRM</h3>
+                    <p style="font-size: 0.85rem; color: #64748B;">Prospection active et gestion fine des relations
+                        clients pour maximiser la conversion.</p>
+                </div>
+                <!-- Competence 2 -->
+                <div class="service-card" data-reveal>
+                    <div class="icon-box">
+                        <ion-icon name="rocket-outline"></ion-icon>
+                    </div>
+                    <h3 class="card-title" style="font-size: 1.1rem;">Stratégie Digitale</h3>
+                    <p style="font-size: 0.85rem; color: #64748B;">Élaboration de plans d'action multicanaux pour une
+                        croissance durable online.</p>
+                </div>
+                <!-- Competence 4 -->
+                <div class="service-card" data-reveal>
+                    <div class="icon-box">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                    </div>
+                    <h3 class="card-title" style="font-size: 1.1rem;">Réseaux Sociaux</h3>
+                    <p style="font-size: 0.85rem; color: #64748B;">Gestion des animations et déploiement stratégique sur
+                        les plateformes sociales.</p>
+                </div>
+                <!-- Competence 5 -->
+                <div class="service-card" data-reveal>
+                    <div class="icon-box">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                    <h3 class="card-title" style="font-size: 1.1rem;">SEO / SEA & UX</h3>
+                    <p style="font-size: 0.85rem; color: #64748B;">Optimisation du parcours utilisateur et visibilité
+                        accrue sur les moteurs de recherche.</p>
+                </div>
+                <!-- Competence 7 -->
+                <div class="service-card" data-reveal>
+                    <div class="icon-box">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                    <h3 class="card-title" style="font-size: 1.1rem;">Communication</h3>
+                    <p style="font-size: 0.85rem; color: #64748B;">Campagnes de sensibilisation et community management
+                        stratégique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <span class="subtitle">Portfolio</span>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 3rem;">
+                <h2 style="color: var(--bg-dark);">Mes réalisations récentes</h2>
+                <a href="projects.html" class="btn btn-outline"
+                    style="border-color: var(--primary); color: var(--primary);">Voir Tout</a>
+            </div>
+
+            <div class="grid-3">
+                <!-- Project 1 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/project1.png" alt="Decathlon Vert">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">E-commerce & Branding</p>
+                        <h3 class="card-title">Decathlon Vert</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Refonte de l'expérience
+                            e-commerce pour la gamme durable. Focus sur l'éco-conception UX et la transparence produit.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://drive.google.com/file/d/1UJYbow4S9G6UTO8cLh5JmN6ZwfsIN41O/view?usp=drive_link"
+                                target="_blank"
+                                style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">Drive
+                                &rarr;</a>
+                            <a href="https://www.figma.com/design/SZaxyMOAQbr5z3yn8F834D/DECATHLON-VERT?node-id=0-1&t=IlcJ87aV3HmpIekO-1"
+                                target="_blank"
+                                style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">Figma
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/project2.png" alt="Plantennas™">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">Digital Marketing</p>
+                        <h3 class="card-title">Plantennas™</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Stratégie marketing pour
+                            pots biodégradables connectés. Projet finaliste de la compétition Spring 2025.</p>
+                        <a href="https://youtu.be/I7MnIYN_Oi4" target="_blank"
+                            style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">YouTube
+                            &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/superu-lachataigneraie.photopresentation.jpg" alt="Force de Vente Super U">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">Gestion de Projet</p>
+                        <h3 class="card-title">Force de Vente</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Une immersion exclusive au
+                            sein de l'enseigne Super U. Entretien approfondi avec un manager sur les stratégies
+                            d'animation commerciale.</p>
+                        <a href="https://drive.google.com/file/d/18tj3rcv5z1RbzlGL6R8q_yHbQVPdnNGs/view?usp=drive_link"
+                            target="_blank"
+                            style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">Drive
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 of projects -->
+            <div class="grid-3" style="margin-top: 2rem;">
+                <!-- Project 4 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/Opera.jpg" alt="Étude Opéra">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">Étude de Marché</p>
+                        <h3 class="card-title">Opéra Market Study</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Analyse des comportements de
+                            consommation culturelle et segmentation client pour l'Opéra National de Lorraine à Nancy.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx8tJ3te7UZwLPF9o51os7ZWQcynylz04ak8Ckt50ePpx3cQ/closedform"
+                                target="_blank"
+                                style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">Questionnaire
+                                &rarr;</a>
+                            <a href="https://drive.google.com/file/d/1iQwNFCoUxngJGJGCtIYPfuO9xvZop58v/view?usp=drive_link"
+                                target="_blank"
+                                style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.8rem;">Présentation
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/Videographie.jpg" alt="Festival du Film">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">Vidéographie</p>
+                        <h3 class="card-title">Festival du Film</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Exploration
+                            cinématographique des nouveaux modes de consommation. Direction artistique et montage vidéo.
+                        </p>
+                        <span style="color: var(--text-muted); font-size: 0.8rem; font-style: italic;">Vidéo disponible
+                            prochainement</span>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card-modern" data-reveal>
+                    <div class="project-img-wrapper">
+                        <img src="./assets/netflix.PNG" alt="Netflix Live Arena">
+                    </div>
+                    <div class="project-content">
+                        <p class="subtitle" style="font-size: 0.7rem; margin-bottom: 0.5rem;">Innovation</p>
+                        <h3 class="card-title">Netflix Live Arena</h3>
+                        <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 1rem;">Concept d'innovation
+                            explorant le divertissement hybride. Mix marketing complet et vision stratégique.</p>
+                        <span style="color: var(--text-muted); font-size: 0.8rem; font-style: italic;">Détails sur
+                            demande</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="orb orb-1"
+                style="top: auto; bottom: 0; left: 50%; transform: translateX(-50%); width: 400px; height: 400px; opacity: 0.1;">
+            </div>
+
+            <h2 style="font-size: 3rem; margin-bottom: 2rem;">Un projet en tête ?</h2>
+            <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-muted);">
+                Discutons de la manière dont nous pouvons collaborer pour créer de la valeur durable pour votre
+                organisation.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; position: relative; z-index: 10;">
+                <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-primary">m'envoyer un email</a>
+                <a href="./assets/CV 2 AMOUZOU STAGE.pdf" class="btn btn-outline" download>Télécharger CV</a>
+                <a href="https://www.linkedin.com/in/memingnon-godwin-amouzou-0b034a259" target="_blank"
+                    class="btn btn-outline"
+                    style="padding: 0.8rem; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                    <ion-icon name="logo-linkedin" style="font-size: 1.5rem;"></ion-icon>
+                </a>
+            </div>
+
+            <div
+                style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem; color: var(--text-muted);">
+                &copy; 2026 Portfolio Responsable. Design inspiré par OPPA.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
