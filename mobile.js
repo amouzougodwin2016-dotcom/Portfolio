@@ -91,4 +91,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Side Menu Drawer Toggle Logic
+    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const closeDrawerBtn = document.querySelector('.close-drawer-btn');
+    const mobileDrawer = document.querySelector('.mobile-menu-drawer');
+    const drawerOverlay = document.querySelector('.drawer-overlay');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    const toggleDrawer = (isOpen) => {
+        mobileDrawer.classList.toggle('active', isOpen);
+        drawerOverlay.classList.toggle('active', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : ''; // Prevent scroll when open
+    };
+
+    if (menuToggleBtn) {
+        menuToggleBtn.addEventListener('click', () => toggleDrawer(true));
+    }
+
+    if (closeDrawerBtn) {
+        closeDrawerBtn.addEventListener('click', () => toggleDrawer(false));
+    }
+
+    if (drawerOverlay) {
+        drawerOverlay.addEventListener('click', () => toggleDrawer(false));
+    }
+
+    // Close drawer when clicking a link
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', () => toggleDrawer(false));
+    });
 });

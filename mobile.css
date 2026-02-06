@@ -25,11 +25,138 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 70px;
+    /* Space for the new header */
     padding-bottom: calc(var(--nav-height) + var(--safe-area-bottom) + 20px);
 }
 
 .container {
     padding: 0 1.5rem;
+}
+
+/* --- Mobile Header --- */
+.mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--bg-dark);
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.menu-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+}
+
+/* --- Mobile Menu Drawer (Side Menu) --- */
+.mobile-menu-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    background: #111827;
+    /* Slightly darker */
+    z-index: 3000;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.mobile-menu-drawer.active {
+    right: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.close-drawer-btn {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.drawer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-grow: 1;
+}
+
+.drawer-link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.drawer-link.active {
+    color: #10B981;
+    /* Green from the reference image */
+}
+
+.drawer-footer {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.drawer-footer a {
+    color: var(--text-muted);
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.drawer-footer a:hover {
+    color: var(--primary);
+}
+
+.drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 2500;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* --- App-like Navigation (Bottom Nav) --- */
