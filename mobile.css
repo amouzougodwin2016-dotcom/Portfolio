@@ -238,7 +238,7 @@ h2 {
 /* --- Hero Section --- */
 .hero {
     padding-top: 4rem;
-    text-align: center;
+    text-align: left;
 }
 
 .hero-img-container {
@@ -438,4 +438,47 @@ h2 {
 .stat-label {
     font-size: 0.7rem;
     color: var(--text-muted);
+}
+
+/* --- Interests Section (Mobile Optimized) --- */
+.interests-image-container {
+    position: relative;
+    max-width: 300px;
+    margin: 2rem auto;
+}
+
+.interests-img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.callout {
+    margin-top: 1rem;
+}
+
+.callout-content {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+}
+
+.callout-content h4 {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.callout-content p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.callout-line,
+.callout-dot {
+    display: none;
+    /* Simplified for mobile */
 }
