@@ -147,3 +147,35 @@ if (mobileMenuToggle) {
         });
     }
 });
+
+// --- Global Side Menu Drawer Toggle Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const closeDrawerBtn = document.querySelector('.close-drawer-btn');
+    const mobileDrawer = document.querySelector('.mobile-menu-drawer');
+    const drawerOverlay = document.querySelector('.drawer-overlay');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    const toggleDrawer = (isOpen) => {
+        if (!mobileDrawer || !drawerOverlay) return;
+        mobileDrawer.classList.toggle('active', isOpen);
+        drawerOverlay.classList.toggle('active', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
+
+    if (menuToggleBtn) {
+        menuToggleBtn.addEventListener('click', () => toggleDrawer(true));
+    }
+
+    if (closeDrawerBtn) {
+        closeDrawerBtn.addEventListener('click', () => toggleDrawer(false));
+    }
+
+    if (drawerOverlay) {
+        drawerOverlay.addEventListener('click', () => toggleDrawer(false));
+    }
+
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', () => toggleDrawer(false));
+    });
+});
