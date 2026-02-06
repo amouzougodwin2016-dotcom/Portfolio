@@ -47,7 +47,8 @@ body {
 
 .about-hero-grid {
     grid-template-columns: 0.8fr 1.2fr;
-    gap: 8rem;
+    gap: 15rem;
+    /* Increased significantly to prevent overlap */
     align-items: center;
 }
 
@@ -708,12 +709,14 @@ footer {
 
 .callout-left {
     flex-direction: row;
-    left: -200px;
+    left: -120px;
+    /* Reduced to pull cards closer to image */
 }
 
 .callout-right {
     flex-direction: row-reverse;
-    right: -200px;
+    right: -120px;
+    /* Reduced to pull cards closer to image */
 }
 
 @media (max-width: 1024px) {
