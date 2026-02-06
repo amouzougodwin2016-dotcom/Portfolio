@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Portfolio | Mobile App</title>
+    <link rel="stylesheet" href="mobile.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="#home" class="nav-tab active" data-tab="home">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Accueil</span>
+            </a>
+            <a href="#about" class="nav-tab" data-tab="about">
+                <ion-icon name="person-outline"></ion-icon>
+                <span>À propos</span>
+            </a>
+            <a href="#experience" class="nav-tab" data-tab="experience">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <span>Parcours</span>
+            </a>
+            <a href="#projects" class="nav-tab" data-tab="projects">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span>Projets</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Screen -->
+        <section id="home" class="hero container" data-reveal>
+            <div class="hero-img-container">
+                <img src="./assets/img_portrait1.png" alt="Godwin Amouzou" class="hero-img">
+            </div>
+            <div class="hero-content">
+                <span class="subtitle">Bonjour, je suis</span>
+                <h1>Godwin Amouzou</h1>
+                <p>
+                    <span id="typewriter" class="text-gradient" style="font-weight: 600; font-size: 1.2rem;"></span>
+                </p>
+                <p style="color: var(--text-muted); margin-top: 1rem;">
+                    Étudiant en Marketing Responsable, passionné par la création de stratégies à impact positif.
+                    Je vous aide à allier performance économique et responsabilité éthique.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-primary">Me Contacter</a>
+                    <a href="./assets/CV 2 AMOUZOU STAGE.pdf" class="btn btn-outline" download>Télécharger CV</a>
+                </div>
+            </div>
+
+            <!-- Main Services (From index.html) -->
+            <div style="margin-top: 3rem; text-align: left;">
+                <span class="subtitle">Ce que je propose</span>
+                <h2 style="font-size: 1.4rem;">Mes Services</h2>
+
+                <div class="card card-flex">
+                    <div class="icon-box"><ion-icon name="people-circle-outline"></ion-icon></div>
+                    <div style="margin-top: 1rem;">
+                        <h3 style="font-size: 1.1rem;">Prospection & CRM</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Gestion fine des relations clients pour
+                            maximiser la conversion.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><ion-icon name="rocket-outline"></ion-icon></div>
+                    <div style="margin-top: 1rem;">
+                        <h3 style="font-size: 1.1rem;">Stratégie Digitale</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Plans d'action multicanaux pour une
+                            croissance durable online.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><ion-icon name="search-outline"></ion-icon></div>
+                    <div style="margin-top: 1rem;">
+                        <h3 style="font-size: 1.1rem;">SEO / SEA & UX</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Optimisation du parcours utilisateur et
+                            visibilité accrue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Screen -->
+        <section id="about" class="container" data-reveal>
+            <div class="section-header">
+                <span class="subtitle">Qui suis-je ?</span>
+                <h2>À propos</h2>
+            </div>
+
+            <div class="card">
+                <p style="font-size: 0.95rem; color: var(--text-muted);">
+                    Je m'appelle <strong>Godwin Amouzou</strong>. Mon approche du marketing ne se limite pas aux
+                    chiffres. Je crois fermement que chaque stratégie doit porter une valeur éthique et un impact
+                    positif durable.
+                </p>
+            </div>
+
+            <!-- Identity Details (From about.html) -->
+            <div class="card">
+                <h3 style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--primary);">Profil Personnel</h3>
+                <div style="display: grid; gap: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <ion-icon name="school-outline" style="color: var(--primary);"></ion-icon>
+                        <span style="font-size: 0.9rem;">M1 Marketing | IAE Nancy</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <ion-icon name="location-outline" style="color: var(--primary);"></ion-icon>
+                        <span style="font-size: 0.9rem;">Basé à Nancy, France</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <ion-icon name="briefcase-outline" style="color: var(--primary);"></ion-icon>
+                        <span style="font-size: 0.9rem; color: #10B981;">Freelance Disponible</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision/Values (From about.html) -->
+            <h3 style="font-size: 1.2rem; margin: 2rem 0 1rem;">Valeurs</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <ion-icon name="heart-outline" style="font-size: 1.5rem; color: var(--secondary);"></ion-icon>
+                    <span class="stat-label" style="display: block; margin-top: 0.5rem;">ÉTHIQUE</span>
+                </div>
+                <div class="stat-card">
+                    <ion-icon name="flash-outline" style="font-size: 1.5rem; color: var(--primary);"></ion-icon>
+                    <span class="stat-label" style="display: block; margin-top: 0.5rem;">AGILITÉ</span>
+                </div>
+            </div>
+
+            <!-- Skills (From about.html) -->
+            <h3 style="font-size: 1.2rem; margin: 2rem 0 1rem;">Compétences</h3>
+            <div class="card">
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Marketing Digital</span><span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Pack Office</span><span>75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Analyses SEO</span><span>75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests (From about.html) -->
+            <h3 style="font-size: 1.2rem; margin: 2rem 0 1rem;">C'est aussi moi</h3>
+            <div class="card interest-card">
+                <ion-icon name="basketball-outline" style="font-size: 1.5rem; color: var(--secondary);"></ion-icon>
+                <span style="font-size: 0.85rem;">Passion pour le Basket-ball et l'esprit d'équipe.</span>
+            </div>
+            <div class="card interest-card">
+                <ion-icon name="airplane-outline" style="font-size: 1.5rem; color: var(--primary);"></ion-icon>
+                <span style="font-size: 0.85rem;">Voyages : Allemagne, Autriche, Ghana, Bénin.</span>
+            </div>
+        </section>
+
+        <!-- Experience Screen -->
+        <section id="experience" class="container" data-reveal>
+            <div class="section-header">
+                <span class="subtitle">Mon parcours</span>
+                <h2>Expérience</h2>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem;">Professionnel</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2024</span>
+                    <div class="card">
+                        <h4 style="font-size: 1rem;">Stagiaire Services Sociétaires</h4>
+                        <p style="font-size: 0.8rem; color: var(--secondary); font-weight: 600;">FUCEC | Lomé</p>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">Prospection et
+                            gestion des réclamations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2023</span>
+                    <div class="card">
+                        <h4 style="font-size: 1rem;">Agent de production</h4>
+                        <p style="font-size: 0.8rem; color: var(--secondary); font-weight: 600;">ELIVIA | Angers</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 2rem 0 1.5rem;">Formation</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2025-2027</span>
+                    <div class="card">
+                        <h4 style="font-size: 1rem;">Master Marketing Responsable</h4>
+                        <p style="font-size: 0.8rem; color: var(--primary); font-weight: 600;">IAE Nancy</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2022-2025</span>
+                    <div class="card">
+                        <h4 style="font-size: 1rem;">Licence Marketing</h4>
+                        <p style="font-size: 0.8rem; color: var(--primary); font-weight: 600;">Université d'Angers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Screen -->
+        <section id="projects" class="container" data-reveal>
+            <div class="section-header">
+                <span class="subtitle">Mon Portfolio</span>
+                <h2>Projets</h2>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="project-card card">
+                <img src="./assets/project1.png" alt="Decathlon Vert" class="project-img">
+                <div class="project-info">
+                    <h3 style="font-size: 1.1rem;">Decathlon Vert</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Refonte UX
+                        éco-responsable et branding durable.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1UJYbow4S9G6UTO8cLh5JmN6ZwfsIN41O/view?usp=drive_link"
+                            class="btn btn-outline" style="padding: 0.5rem; font-size: 0.75rem; flex: 1;">Drive</a>
+                        <a href="https://www.figma.com/design/SZaxyMOAQbr5z3yn8F834D/DECATHLON-VERT?node-id=0-1&t=IlcJ87aV3HmpIekO-1"
+                            class="btn btn-outline" style="padding: 0.5rem; font-size: 0.75rem; flex: 1;">Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card card">
+                <img src="./assets/project2.png" alt="Plantennas" class="project-img">
+                <div class="project-info">
+                    <h3 style="font-size: 1.1rem;">Plantennas™</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Stratégie marketing
+                        pour pots biodégradables.</p>
+                    <a href="https://youtu.be/I7MnIYN_Oi4" class="btn btn-outline"
+                        style="padding: 0.5rem; font-size: 0.75rem;">YouTube</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card card">
+                <img src="./assets/superu-lachataigneraie.photopresentation.jpg" alt="Force de Vente"
+                    class="project-img">
+                <div class="project-info">
+                    <h3 style="font-size: 1.1rem;">Force de Vente</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Immersion commerciale
+                        chez Super U.</p>
+                    <a href="https://drive.google.com/file/d/18tj3rcv5z1RbzlGL6R8q_yHbQVPdnNGs/view?usp=drive_link"
+                        class="btn btn-outline" style="padding: 0.5rem; font-size: 0.75rem;">Drive</a>
+                </div>
+            </div>
+
+            <!-- More Projects link -->
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">6 projets au
+                total • Voir tous les détails sur PC</p>
+        </section>
+    </main>
+
+    <!-- Simple Contact Footer inside main for mobile flow -->
+    <footer id="contact"
+        style="padding: 3rem 1.5rem; text-align: center; background: var(--bg-card); border-radius: 30px 30px 0 0;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Parlons de vos projets !</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Je suis disponible pour discuter de
+            collaborations durables.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center;">
+            <a href="mailto:amouzougodwin2016@gmail.com" class="btn btn-primary" style="flex: 2;">Email</a>
+            <a href="https://www.linkedin.com/in/memingnon-godwin-amouzou-0b034a259" target="_blank"
+                class="btn btn-outline" style="flex: 1; padding: 0.8rem;">
+                <ion-icon name="logo-linkedin" style="font-size: 1.2rem;"></ion-icon>
+            </a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.7rem; color: var(--text-muted); opacity: 0.5;">&copy; 2026 Godwin
+            Amouzou</p>
+    </footer>
+
+    <script src="mobile.js"></script>
+</body>
+
+</html>
